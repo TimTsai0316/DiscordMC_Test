@@ -1,5 +1,5 @@
 import discord
-from discord.ext import commands, pages
+from discord.ext import commands
 import datetime
 import requests
 import json
