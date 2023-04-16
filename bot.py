@@ -11,7 +11,7 @@ intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix = ',', intents=intents)
 
-mc_server_ip = "whatisthis.myddns.me"
+mc_server_ip = os.getenv('SERVER_ID')
 
 class MyView(discord.ui.View):
     @discord.ui.button(label="重新整理", style=discord.ButtonStyle.primary, emoji="🔁")
